@@ -1,0 +1,272 @@
+.braine-multistep-form .step * {
+  transition: 0.2s all;
+  font-family: var(--e-global-typography-primary-font-family), sans-serif;
+  text-transform: uppercase;
+  color: black;
+}
+
+.braine-multistep-form input[type="radio"] {
+  display: none;
+}
+
+.braine-multistep-form .step {
+  display: none;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.braine-multistep-form .step .messages {
+  display: block;
+  text-transform: none;
+  padding: 10px;
+}
+
+.braine-multistep-form .step .prev-step {
+  border: none;
+  appearance: none;
+  display: flex;
+  align-items: center;
+  text-transform: none;
+  font-size: 21px;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.braine-multistep-form .step .prev-step .icon {
+  align-items: center;
+  display: flex;
+}
+
+.braine-multistep-form .step .prev-step .icon img {
+  max-height: 20px;
+  margin-right: 10px;
+}
+
+.braine-multistep-form .step .prev-step:hover,
+.braine-multistep-form .step .prev-step:focus {
+  background: none;
+  outline: transparent;
+}
+
+.braine-multistep-form .step .next-step {
+  padding: 3px 40px;
+  font-size: 1.2rem;
+  border: 3px solid var(--e-global-color-primary);
+  border-radius: 0;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 15px 0;
+}
+
+.braine-multistep-form .step .next-step:hover,
+.braine-multistep-form .step .next-step:focus {
+  background: var(--e-global-color-primary);
+  transition: 0.2s all;
+  border-radius: 0 !important;
+  outline: var(--e-global-color-primary);
+}
+
+.braine-multistep-form .step.current {
+  display: block;
+}
+
+/* Header */
+
+.braine-multistep-form header {
+  margin-bottom: 25px;
+}
+
+.braine-multistep-form header .total-steps {
+  text-transform: none;
+  font-size: 20px;
+}
+
+.braine-multistep-form header h3 {
+  display: inline;
+  position: relative;
+  margin: 0 auto;
+}
+
+.braine-multistep-form header h3::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: var(--e-global-color-primary);
+  position: absolute;
+  top: 15px;
+  left: 0;
+  transform: translate(-25px);
+  border-radius: 50%;
+  display: block;
+}
+
+/* Label */
+
+.braine-multistep-form label {
+  padding: 5px 40px;
+  font-size: 1.2rem;
+  border: 3px solid var(--e-global-color-primary);
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 30px;
+  margin-bottom: 15px;
+  min-height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.braine-multistep-form label:hover,
+.braine-multistep-form input:checked + label {
+  background: var(--e-global-color-primary);
+  transition: 0.2s all;
+}
+
+.braine-multistep-form label:last-of-type {
+  margin-right: 0;
+}
+
+.braine-multistep-form .braine-dimensions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.braine-multistep-form .braine-dimensions input,
+.braine-multistep-form textarea {
+  border: 3px solid var(--e-global-color-primary);
+  border-radius: 0;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.braine-multistep-form .braine-dimensions input::placeholder,
+.braine-multistep-form textarea::placeholder {
+  color: #cfcfcf;
+}
+
+.braine-multistep-form .braine-dimensions span {
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.braine-multistep-form .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 10px;
+}
+
+.braine-multistep-form .row:last-of-type {
+  margin-bottom: 30px;
+}
+
+.braine-multistep-form .row .input-block input,
+.braine-multistep-form .row .select-block select {
+  border: 2px solid var(--e-global-color-primary);
+  border-radius: 0;
+  color: black;
+  padding: 0.2em 1rem;
+  min-height: 35px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.braine-multistep-form .row .input-block input::placeholder {
+  color: black;
+}
+
+.braine-multistep-form .row .select-block select {
+  padding: 0.1em 0.8rem;
+}
+
+/* Select2 */
+
+.braine-multistep-form .select2-container--default .select2-selection--single {
+  background: transparent;
+  height: 35px;
+  border: 2px solid var(--e-global-color-primary);
+  color: black;
+  border-radius: 0;
+}
+
+.braine-multistep-form
+  .select2-container--default
+  .select2-selection--single
+  .select2-selection__rendered {
+  color: black;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 31px;
+  padding-left: 15px;
+  background: white;
+}
+
+.braine-multistep-form
+  .select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow {
+  height: 35px;
+  width: 35px;
+}
+
+.braine-multistep-form .select2-container *:focus {
+  outline: none;
+}
+
+.braine-multistep-form
+  .select2-container--default
+  .select2-selection--single
+  .select2-selection__arrow
+  b {
+  border-color: var(--e-global-color-primary) transparent transparent
+    transparent;
+}
+
+.braine-multistep-form .submit {
+  background: transparent;
+  border: 2px solid var(--e-global-color-primary);
+  border-radius: 0;
+  color: black;
+  font-weight: 800;
+  padding: 5px 40px;
+}
+
+.braine-multistep-form .submit:hover,
+.braine-multistep-form .submit:focus {
+  background: var(--e-global-color-primary);
+  transition: 0.2s all;
+  outline: var(--e-global-color-primary);
+}
+
+.braine-multistep-form .return-step p {
+  max-width: 70%;
+  margin: 0 auto;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 997px) {
+  .braine-multistep-form header h3 {
+    font-size: 22px;
+  }
+  .braine-multistep-form .braine-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .braine-multistep-form label,
+  .braine-multistep-form label:last-of-type {
+    margin: 10px;
+  }
+  .braine-multistep-form .braine-dimensions {
+    flex-direction: column;
+  }
+  .braine-multistep-form .row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
